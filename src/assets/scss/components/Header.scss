@@ -1,0 +1,111 @@
+@import '../variables';
+@import '../mixins.scss';
+
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+
+    &__brand {
+        width: 50%;
+        padding-left: 10%;
+        padding-top: 22px;
+    }
+
+    &__links {
+        width: 50%;
+        display: flex;
+        margin: 0;
+        list-style-type: none;
+        padding-left: 0px;
+        color: $header-grey;
+
+        &--search {
+            color: $header-grey;
+            padding: 0;
+            margin: 0;
+            outline: none;
+            border: none;
+            vertical-align: initial;
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        &--menu {
+            height: 70px;
+            margin: 0;
+            width: 72.8px;
+            padding: 20px 28px;
+            cursor: pointer;
+            background-color: $blue;
+        }
+
+        li {
+            margin: 20px 28px;
+            @include for-desktop-down {
+                margin: 20px 7px;
+            }
+
+            .dropdown-toggle.btn {
+                color: $header-grey;
+                padding: 0;
+                margin: 0;
+                outline: none;
+                border: none;
+                vertical-align: initial;
+                background-color: transparent;
+                border-color: transparent;
+            }
+        }
+
+        li:first-child {
+            margin-left: 0;
+        }
+
+        li:last-child {
+            margin: 0;
+        }
+    }
+
+}
+
+.nav {
+    height: 67px;
+    border: 1px solid #E4E4E4;
+
+
+    &__container {
+            display: flex;
+            width: 100%;
+            margin-top: auto;
+            position: relative;
+            justify-content: space-around;
+            padding-left: 7.5%;
+            padding-right: 8.5%;
+
+        li {
+            list-style-type: none;
+            
+            a {
+                color: $header-grey;
+                padding: 1em 2px;
+                text-decoration: none;
+
+                &:hover {
+                    color: $blue;
+                    fill: $blue;
+                }
+
+                &.active {
+                    color: $blue !important;
+                    border-bottom: 7px solid $blue;
+                }
+            }
+
+            svg {
+                vertical-align: initial;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import './variables';
+@import './fonts.scss';
+
+html, body {
+    background-color: #E4E4E4;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 1.7rem;
+}
+
+.breadcrumb-item {
+    font: 12px/24px 'Source Sans Pro';
+
+    a {
+        color: #0089E1;
+        font: 12px/24px 'Source Sans Pro';
+    }
+
+    &.active {
+        color: #BBBBBB;
+    }
+}
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}

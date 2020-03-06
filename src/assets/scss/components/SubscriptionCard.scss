@@ -1,0 +1,50 @@
+@import '../fonts.scss';
+
+.subcard {
+    margin-bottom: 5%;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__link {
+        text-decoration: underline;
+        font: 12px/20px 'Source Sans Pro';
+        letter-spacing: 0;
+        color: #0089E1;
+    }
+
+    &__payment {
+        width: 100%;
+    }
+
+    &__align {
+        padding-right: 20%;
+    }
+
+    &.card {
+        padding: 40px;
+    }
+
+    .card-title {
+        font: 20px/34px 'Source Sans Pro';
+        
+    }
+
+    .sub-package-title {
+        font: 20px/34px 'Source Sans Pro Semi Bold';
+        color: #373737;
+    }
+
+    .sub-package-subtitle {
+        font: 14px/34px 'Source Sans Pro';
+        color: #808080;
+    }
+
+    .table-borderless th,
+    .table-borderless td {
+        padding: 0;
+    }
+
+}
+// Source Sans Pro Semi Bold

@@ -1,0 +1,29 @@
+// @import '../fonts/manrope-bold.ttf';
+// @import '../fonts/manrope-extrabold.ttf';
+// @import '../fonts/manrope-light.ttf';
+// @import '../fonts/manrope-medium.ttf';
+// @import '../fonts/manrope-regular.ttf';
+// @import '../fonts/manrope-semibold.ttf';
+// @import '../fonts/manrope-thin.ttf';
+// @import '../fonts/SourceSansPro-Black.otf';
+// @import '../fonts/SourceSansPro-BlackIt.otf';
+// @import '../fonts/SourceSansPro-Bold.otf';
+// @import '../fonts/';
+
+@font-face {
+    font-family: 'Manrope Bold';
+    src: url(../fonts/manrope-bold.ttf);
+    format: 'truetype';
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/SourceSansPro-Regular.otf);
+    format: 'opentype';
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Semi Bold';
+    src: url(../fonts/SourceSansPro-Semibold.otf);
+    format: 'opentype';
+}
