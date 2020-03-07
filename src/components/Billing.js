@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Layout from '../components/Layout';
 import SubscriptionCard from './SubscriptionCard';
 
 const BillingComponent = () => {
+    useEffect(() => {
+        document.title = 'Billing | RightCom'
+    }, [])
+
     return (
         <>
             <Layout>
