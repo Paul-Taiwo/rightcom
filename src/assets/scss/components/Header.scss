@@ -1,5 +1,6 @@
 @import '../variables';
 @import '../mixins.scss';
+@import '../fonts.scss';
 
 .header {
     height: 70px;
@@ -20,6 +21,7 @@
         list-style-type: none;
         padding-left: 0px;
         color: $header-grey;
+        font: 12px/24px 'Source Sans Pro Bold';
 
         &--search {
             color: $header-grey;
@@ -30,6 +32,7 @@
             vertical-align: initial;
             background-color: transparent;
             border-color: transparent;
+            font: 12px/24px 'Source Sans Pro Bold';
         }
 
         &--menu {
@@ -42,9 +45,9 @@
         }
 
         li {
-            margin: 20px 28px;
+            margin: 26px 34px;
             @include for-desktop-down {
-                margin: 20px 7px;
+                margin: 20px 14px;
             }
 
             .dropdown-toggle.btn {
@@ -56,6 +59,7 @@
                 vertical-align: initial;
                 background-color: transparent;
                 border-color: transparent;
+                font: 12px/24px 'Source Sans Pro Bold';
             }
         }
 
@@ -91,6 +95,12 @@
                 color: $header-grey;
                 padding: 1em 2px;
                 text-decoration: none;
+                transition: 1s ease;
+                -webkit-transition: 1s ease;
+                -moz-transition: 1s ease;
+                -ms-transition: 1s ease;
+                -o-transition: 1s ease;
+                font: 14px/18px 'Source Sans Pro Bold';
 
                 &:hover {
                     color: $blue;
@@ -100,12 +110,16 @@
                 &.active {
                     color: $blue !important;
                     border-bottom: 7px solid $blue;
+
+                    svg {
+                        fill: $blue;
+                    }
+                }
+                svg {
+                    vertical-align: initial;
                 }
             }
 
-            svg {
-                vertical-align: initial;
-            }
         }
     }
 }

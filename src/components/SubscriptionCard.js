@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Table } from 'reactstrap';
 
@@ -21,7 +22,9 @@ const SubscriptionCard = () => {
                         <p className='mb-0 sub-package-title'>Subscription Package</p>
                         <p className='sub-package-subtitle'>Pro Package - per device</p>
 
-                        <p className='subcard__link'>Change subscription</p>
+                        <p className='subcard__link'>
+                            <Link>Change subscription</Link>
+                        </p>
                     </div>
                 </div>
 
@@ -55,7 +58,9 @@ const SubscriptionCard = () => {
                                 <th className='sub-package-subtitle'>12/12/2019</th>
                                 <td className='sub-package-subtitle'>13558927400-280908</td>
                                 <td className='sub-package-subtitle'>Credit token</td>
-                                <td className='subcard__link'>Print purchase receipt</td>
+                                <td className='subcard__link'>
+                                    <Link>Print purchase receipt</Link>
+                                </td>
                             </tr>
                         </tbody>
                     </Table>
