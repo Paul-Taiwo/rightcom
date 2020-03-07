@@ -44,6 +44,7 @@ const SubscriptionCard = () => {
 
                 <hr style={{ height: '1px', width: '100%', backgroundColor: '#E4E4E4' }} />
 
+                {/* Tables */}
                 <div className='subcard__align'>
                     <Table borderless>
                         <thead>
